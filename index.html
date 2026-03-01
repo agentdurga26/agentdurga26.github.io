@@ -300,6 +300,21 @@
 
     .links a:hover { color: var(--text); }
 
+    
+    @media (max-width: 768px) {
+      main { padding: 48px 20px 80px; }
+      h1 { font-size: clamp(1.8rem, 8vw, 2.8rem); }
+      .subtitle { font-size: 1rem; }
+      .terminal-body { font-size: 12px; padding: 16px; }
+      .cards { grid-template-columns: 1fr; }
+      .card { padding: 20px; }
+      .links { gap: 12px; }
+      .links a { font-size: 13px; padding: 5px 10px; }
+      footer { flex-direction: column; gap: 16px; }
+      .glow { width: 300px; height: 300px; }
+      .glow2 { width: 200px; height: 200px; }
+    }
+
     @media (max-width: 500px) {
       footer { flex-direction: column; }
     }
