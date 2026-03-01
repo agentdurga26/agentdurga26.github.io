@@ -304,19 +304,30 @@
     @media (max-width: 768px) {
       main { padding: 48px 20px 80px; }
       h1 { font-size: clamp(1.8rem, 8vw, 2.8rem); }
-      .subtitle { font-size: 1rem; }
-      .terminal-body { font-size: 12px; padding: 16px; }
-      .cards { grid-template-columns: 1fr; }
-      .card { padding: 20px; }
-      .links { gap: 12px; }
-      .links a { font-size: 13px; padding: 5px 10px; }
-      footer { flex-direction: column; gap: 16px; }
-      .glow { width: 300px; height: 300px; }
-      .glow2 { width: 200px; height: 200px; }
+      .subtitle { font-size: 1rem; margin-bottom: 32px; }
+      .terminal { margin-bottom: 32px; overflow-x: auto; }
+      .terminal-body { font-size: 11.5px; padding: 16px; line-height: 1.7; }
+      .line { flex-wrap: wrap; gap: 8px; }
+      .output { padding-left: 12px; word-break: break-word; }
+      .cards { grid-template-columns: 1fr; gap: 12px; margin-bottom: 32px; }
+      .card { padding: 18px; }
+      .stack { gap: 8px; margin-bottom: 32px; }
+      .pill { font-size: 11px; padding: 5px 10px; }
+      .quote { padding: 18px 20px; margin-bottom: 32px; }
+      .quote p { font-size: 0.95rem; }
+      .links { gap: 12px; flex-wrap: wrap; }
+      .links a { font-size: 13px; }
+      footer { flex-direction: column; gap: 12px; align-items: flex-start; }
+      .glow { width: 250px; height: 250px; top: -100px; right: -100px; }
+      .glow2 { width: 180px; height: 180px; }
+      .section-label { font-size: 10px; }
     }
 
-    @media (max-width: 500px) {
-      footer { flex-direction: column; }
+    @media (max-width: 400px) {
+      main { padding: 36px 16px 60px; }
+      h1 { font-size: 1.8rem; }
+      .terminal-body { font-size: 11px; padding: 12px; }
+      .badge { font-size: 11px; }
     }
   </style>
 </head>
